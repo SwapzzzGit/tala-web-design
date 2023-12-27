@@ -18,4 +18,46 @@ menu.addEventListener("click", function () {
   document.querySelector("#menu").classList.toggle("openmenu", isOpen);
 });
 
-document.querySelector("#page-1 img").style.scale = "1"
+
+var tl = gsap.timeline()
+
+tl.from("#page-1 h1", {
+    y: 60,
+    duration: 0.7,
+    opacity: 0,
+    ease: Expo.ease
+})
+.from("#page-1 h2", {
+    y: 50,
+    duration: 0.5,
+    delay: -0.2,
+    ease: Expo.ease
+})
+.from("#page-1 h3", {
+    y: 50,
+    duration: 0.5,
+    delay: -0.4,
+    ease: Expo.ease
+});
+
+gsap.to("#page-2 img",{
+    scale:1,
+    scrollTrigger:{
+        trigger:"#page-2 img",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 5%",
+        scrub:5
+    }
+})
+
+gsap.from("#page-2 h1",{
+    rotateX: "-90deg",
+    scrollTrigger:{
+        trigger: "#page-2 h1",
+        scroller: "body",
+        start : "top 70%",
+        end : "top 60%",
+        scrub: 5,
+    }
+})
