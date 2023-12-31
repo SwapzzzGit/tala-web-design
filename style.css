@@ -32,7 +32,6 @@ body{
 }
 
 #main {
-  height: 100%;
   position: relative;
   background-color: #232025;
   color: #D5CDC4;
@@ -128,6 +127,7 @@ body{
   padding-right: 38px;
   font-weight: 600;
   letter-spacing: 2px;
+  color: #D5CDC4;
 }
 
 #nav-prt2 #menu {
@@ -403,6 +403,7 @@ body{
   width: 60%;
   font-weight: 300;
   font-family: stabilGrotesk;
+  z-index: 999;
 }
 
 #page-7 h3 span{
