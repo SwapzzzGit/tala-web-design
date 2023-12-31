@@ -391,79 +391,53 @@ body{
 #page-7{
   width:100vw;
   height:100vh;
-  text-align: center;
-  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #page-7 h3{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto auto 0;
   font-size: 3.3vw;
-  width: 60%;
   font-weight: 300;
+  text-align: center;
   font-family: stabilGrotesk;
 }
 
-#page-7 h3 span{
+#page-7 span{
   font-weight: 300;
-  font-family: domaine;
+    font-family: domaine;
 }
 
-#page-7-elems{
-  width:100vw;
-  height:54vh;
-  margin-top: 12vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-}
-
-#page-7-elems #element-1{
-  height: 100%;
-  width: 50%;
+#page-7 #page-7-elems{
   display:flex;
+  justify-content: center;
    align-items: center;
-   cursor: none;
-   text-align: center;
-  }
-  
-  #page-7-elems #element-2{
-    height: 100%;
-    width: 50%;
-    display:flex;
-    align-items: center;
-    cursor: none;
+   margin: 30vh auto auto;
 }
 
-#page-7-elems #element-1 h3{
-  z-index: 999;
+#page-7 #page-7-elems #element-1{
+  width: 50vw;
+}
+#page-7 #page-7-elems #element-2{
+  width: 50vw;
+}
+
+#page-7 #page-7-elems #element-1 h3{
   position: relative;
-}
-
-#page-7-elems #element-2 h3{
   z-index: 999;
+}
+#page-7 #page-7-elems #element-2 h3{
   position: relative;
+  z-index: 999;
 }
 
-#page-7-elems #element-1 img{
+#page-7 #page-7-elems #element-1 img{
   position: absolute;
-  transform: rotate(20deg);
-  opacity: 0;
-  transition: opacity ease 0.5s;
 }
-
-#page-7-elems #element-2 img{
+#page-7 #page-7-elems #element-2 img{
   position: absolute;
-  transform: rotate(20deg);
-  opacity: 0;
-  transition: opacity ease 0.5s;
-}
-
-#page-8{
-  width:100vw;
-  height:100vh;
 }
 
 @keyframes rotateInfinite {

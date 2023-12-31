@@ -89,3 +89,27 @@ scroller2.forEach(function(elems){
         }
     })
 })
+
+document.querySelector("#element-1").addEventListener("mousemove",function(dets){
+    //img 1
+    document.querySelector("#element-1 img").style.opacity = 1;
+    document.querySelector("#element-1 img").style.left = `${dets.x}px`;
+    document.querySelector("#element-1 img").style.top = `${dets.y - 460}px`;
+})
+
+document.querySelector("#element-2").addEventListener("mousemove",function(dets){
+     //img 2
+     document.querySelector("#element-2 img").style.opacity = 1;
+     document.querySelector("#element-2 img").style.left = `${dets.x}px`;
+     document.querySelector("#element-2 img").style.top = `${dets.y - 460}px`; 
+})
+
+document.querySelector("#element-1").addEventListener("mouseleave",function(dets){
+    //img 1
+    document.querySelector("#element-1 img").style.opacity = 0;
+})
+
+document.querySelector("#element-2").addEventListener("mouseleave",function(dets){
+     //img 2
+     document.querySelector("#element-2 img").style.opacity = 0;
+})
